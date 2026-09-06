@@ -42,7 +42,7 @@ app.use("/msg", messageRouter);
 const startServer = async ()=>{
     try{
         
-        await connectDB();
+        await connectDB(process.env.MONGO_URL);
 
        app.listen(process.env.PORT,()=>{
         console.log(`Server has started listenting at port 3000 ${process.env.PORT}`);
