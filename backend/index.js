@@ -3,6 +3,7 @@ import connectDB from "./config/database.js";
 import dotenv from "dotenv";
 import userRouter from "./routes/userRouter.js";
 import messageRouter from "./routes/messageRouter.js";
+import User from "./model/userSchema.js";
 import cookieParser from "cookie-parser";
 dotenv.config();
 
